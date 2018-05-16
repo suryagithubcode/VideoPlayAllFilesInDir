@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+         
+        <FrameLayout 
+       android:layout_width="0dp"
+      android:layout_height="match_parent"
+       android:id="@+id/videoframe"  
+      android:layout_weight="1" 
+   > 
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_weight="1"  
+     />
+    </FrameLayout>
+    
+      <!--  <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+         android:layout_weight="0.5"      
+         >
+    </ViewFlipper>   -->  
+        
+    </LinearLayout>
+  
+ 
+
+<!-- <View android:layout_height="fill_parent"
+    android:layout_width="5dp"
+    android:background="#000000"
+    android:layout_toRightOf="@+id/videoframe"/> -->
+
+   
+    
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/rp">
+        
+       <!--  <TextView android:layout_height="wrap_content"
+            android:id="@+id/scrollText"
+            android:layout_width="match_parent"
+            android:textSize="50sp"
+            android:text="lsdkfgjsdlkfgsdlfkgdfkgdfkgjdkf"
+            android:layout_alignParentBottom="true"            
+          /> -->
+    </LinearLayout>
+</RelativeLayout>
